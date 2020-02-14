@@ -1,0 +1,20 @@
+<p>
+  <input type="text" [(ngModel)] = 'name'> <br>
+  master-page-component works! <br>
+  {{name}} <br>
+  <button (click) = "nameChange()">Change</button>
+</p>
+
+<p>
+  <app-child-component [child] = 'parentMessage'></app-child-component>
+</p>
+
+<p>
+  <app-child-component-another (parent) = 'datafromChild($event)'></app-child-component-another>
+</p>
+<p>
+  <span appAppShadow>Alligator</span>
+</p>
+
+<br>
+<br>
